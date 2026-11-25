@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Exotic AI Lab</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main>
+  <header class="page-head">
+    <p class="eyebrow" style="justify-content:center">CONTACT</p>
+    <h1>Let's Create Something <span>Extraordinary</span></h1>
+    <p>Tell us about your brand. We'll handle the rest.</p>
+  </header>
+
+  <section class="sec contact" style="padding-top:40px">
+        <form id="contactForm" class="form reveal" novalidate>
+      <div class="field"><label for="name">Name</label><input id="name" name="name" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      <div class="field"><label for="whatsapp">WhatsApp number (optional)</label><input id="whatsapp" name="whatsapp" type="tel"></div>
+      <div class="field">
+        <label for="category">Business category</label>
+        <select id="category" name="category">
+          <option>Jewellery</option><option>Cosmetics</option><option>Real Estate</option><option>Restaurant</option><option>Other</option>
+        </select>
+      </div>
+      <div class="field"><label for="msg">What would you like us to create?</label><textarea id="msg" name="message" rows="5" required></textarea></div>
+
+      <!-- Spam trap: keep hidden -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
+
+      <button class="btn" type="submit">Send Message</button>
+      <p id="formStatus" class="form-status" role="status"></p>
+    </form>
+
+    <aside class="info reveal" style="white-space:nowrap">
+      <div class="info-row"><span class="ic" data-icon="mail"></span><div><small>Email</small><a href="#">exoticailabs@gmail.com</a></div></div>
+      <div class="info-row"><span class="ic" data-icon="phone"></span><div><small>WhatsApp</small><a href="#">+91 9079749914</a></div></div>
+      <div class="info-row"><span class="ic" data-icon="insta"></span><div><small>Instagram</small><a href="https://www.instagram.com/exotic_ai.labs/" target="_blank" rel="noopener">exotic_ai.labs</a></div></div>
+      <p class="info-note">No studio. No stress. Just stunning AI visuals.</p>
+    </aside>
+  </section>
+</main>
+<script type="module" src="/script.js"></script>
+</body>
+</html>
